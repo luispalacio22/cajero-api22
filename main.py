@@ -11,6 +11,10 @@ from fastapi import HTTPException
 
 api = FastAPI()
 
+@api.get("/")
+async def root(parameter_list):
+    return {"mensaje":"Diana"}
+
 
 @api.post("/user/auth/")
 async def auth_user(user_in: UserIn):
