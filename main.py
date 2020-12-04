@@ -12,7 +12,7 @@ from fastapi import HTTPException
 api = FastAPI()
 
 @api.get("/")
-async def root(parameter_list):
+async def root():
     return {"mensaje":"Diana"}
 
 
