@@ -13,7 +13,7 @@ api = FastAPI()
 
 @api.get("/")
 async def root():
-    return {"mensaje":"Diana"}
+    return {"mensaje":"Hola mundo"}
 
 
 @api.post("/user/auth/")
